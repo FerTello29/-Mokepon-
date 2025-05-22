@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>MOKEPON</title>
+</head>
+<body>
+    <script defer src="js/cod.js"></script>
+
+    <h1>MOKEPON 🕹️🔥💧🌎</h1>
+
+    <section id="seleccionar-mascota">
+        <h2>¡Elige tu mascota!</h2>
+        <div class="tarjetas-mokepon mascota-opciones">
+            <label for="Hipodoge" class="tarjeta">
+                <img src="imagenes/Hipo.png" alt="Hipodoge" />
+                <p>Hipodoge</p>
+                <input type="radio" name="mascota" id="hipodoge"/>
+            </label>
+
+            <label for="Capipepo" class="tarjeta">
+                <img src="imagenes/Capi.png" alt="Capipepo" />
+                <p>Capipepo</p>
+                <input type="radio" name="mascota" id="capipepo"/>
+            </label>
+
+            <label for="Ratigueya" class="tarjeta">
+                <img src="imagenes/Rati.png" alt="Ratigueya" />
+                <p>Ratigueya</p>
+                <input type="radio" name="mascota" id="ratigueya"/>
+            </label>
+        </div>
+
+        <button id="boton-seleccionar">Seleccionar</button>
+    </section>
+
+    <!-- Sección de ataque -->
+    <section id="seleccionar-ataque" style="display: none;">
+        <h2>¡Elige tu ataque!</h2>
+        <p>Tu mascota: <span id="mascota-jugador"></span> - Vidas: <span id="vidas-jugador">3</span></p>
+        <p>Mascota del enemigo: <span id="mascota-enemigo"></span> - Vidas: <span id="vidas-enemigo">3</span></p>
+
+        <p>
+            <button id="ataque-fuego">Fuego 🔥</button>
+            <button id="ataque-agua">Agua 💧</button>
+            <button id="ataque-tierra">Tierra 🌎</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+        <!-- Aquí aparecerán los mensajes de batalla -->
+    </section>
+
+    <section id="reiniciar" style="display: none;">
+        <button id="button-reiniciar" onclick="location.reload()">Reiniciar</button>
+    </section>
+
+    <footer>
+        Tecnológico Nacional de México campus Pachuca - Programación Web - Evaluación Tema 3 - Fernando Rosales Tello 23200171
+    </footer>
+</body>
+</html>
